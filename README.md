@@ -1,4 +1,4 @@
-# Elmsish Getting Started
+# Elmish Getting Started
 
 This is basically the simplest Fable client app you can get with minimal setup for an Elmish app. It creates a simple counter app.
 
