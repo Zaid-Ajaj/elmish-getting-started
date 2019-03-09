@@ -10,15 +10,15 @@ type State = { Count: int }
 type Msg =
   | Increment
   | Decrement
-
-let init() : State = { Count = 0 }
+  
+let init() = { Count = 0 }
 
 let update (msg: Msg) (state: State) =
-    match msg with
-    | Increment -> { state with Count = state.Count + 1 }
-    | Decrement -> { state with Count = state.Count - 1 }
+  match msg with
+  | Increment -> { state with Count = state.Count + 1 }
+  | Decrement -> { state with Count = state.Count - 1 }
 
-let render (state: State) dispatch =
+let render (state: State) (dispatch: Msg -> unit) =
   div []
       [ button [ OnClick (fun _ -> dispatch Increment) ] [ str "+" ]
         div [] [ str (string state.Count) ]
