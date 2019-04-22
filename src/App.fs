@@ -2,8 +2,8 @@ module App
 
 open Elmish
 open Elmish.React
-open Fable.Helpers.React
-open Fable.Helpers.React.Props
+open Fable.React 
+open Fable.React.Props
 
 type State = { Count: int }
 
@@ -24,12 +24,13 @@ let update (msg: Msg) (currentState: State) =
       nextState
       
 let render (state: State) (dispatch: Msg -> unit) =
-  div []
-      [ button [ OnClick (fun _ -> dispatch Increment) ] [ str "+" ]
-        div [] [ str (string state.Count) ]
-        button [ OnClick (fun _ -> dispatch Decrement) ] [ str "-" ] ]
+  div [ ] [ 
+    button [ OnClick (fun _ -> dispatch Increment) ] [ str "+" ]
+    div [ ] [ str (string state.Count) ]
+    button [ OnClick (fun _ -> dispatch Decrement) ] [ str "-" ] 
+  ]
 
 Program.mkSimple init update render
-|> Program.withReact "elmish-app"
+|> Program.withReactSynchronous "elmish-app"
 |> Program.withConsoleTrace
 |> Program.run
