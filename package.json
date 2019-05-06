@@ -1,9 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "part1": "webpack-dev-server --config webpack.config-part1.js",
-    "part2": "webpack-dev-server --config webpack.config-part2.js",
-    "part3": "webpack-dev-server --config webpack.config-part3.js",
+    "start": "webpack-dev-server",
     "build": "webpack --mode production"
   },
   "dependencies": {
