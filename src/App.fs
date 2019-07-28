@@ -28,12 +28,12 @@ let render (state: State) (dispatch: Msg -> unit) =
         prop.children [
             Html.button [
                 prop.onClick (fun _ -> dispatch Increment)
-                prop.children [ Html.text "Decrement" ]
+                prop.text "Increment"
             ]
 
             Html.button [
                 prop.onClick (fun _ -> dispatch Decrement)
-                prop.children [ Html.text "Decrement" ]
+                prop.text "Decrement"
             ]
 
             Html.h1 state.Count
