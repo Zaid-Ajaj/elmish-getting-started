@@ -3,10 +3,13 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="global/Types.fs" />
     <Compile Include="App.fs" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Fable.Elmish.HMR" Version="4.1.0" />
     <PackageReference Include="Fable.Elmish.React" Version="3.0.1" />
     <PackageReference Include="Feliz" Version="0.68.10" />
+    <PackageReference Include="Zanaptak.TypedCssClasses" Version="0.4.0" />
   </ItemGroup>
 </Project>

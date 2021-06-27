@@ -3,6 +3,10 @@
     "configurations": [
         {
             "name": "Debug with Chrome",
+            "runtimeExecutable": "/opt/brave.com/brave/brave",
+            "runtimeArgs": [
+                "--remote-debugging-port=9222"
+            ],
             "type": "chrome",
             "request": "launch",
             "preLaunchTask": "Watch Client",
