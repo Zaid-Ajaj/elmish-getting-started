@@ -1,15 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="global/Types.fs" />
+    <Compile Include="global/*" />
     <Compile Include="App.fs" />
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Fable.Elmish.HMR" Version="4.1.0" />
-    <PackageReference Include="Fable.Elmish.React" Version="3.0.1" />
-    <PackageReference Include="Feliz" Version="0.68.10" />
-    <PackageReference Include="Zanaptak.TypedCssClasses" Version="0.4.0" />
-  </ItemGroup>
+  <Import Project="..\.paket\Paket.Restore.targets" />
 </Project>

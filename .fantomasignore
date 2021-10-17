@@ -1,5 +1,5 @@
 # Ignore Fable files
-.fable/
+.fable-build/
 
 # Ignore script files
 *.fsx

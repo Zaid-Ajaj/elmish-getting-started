@@ -1,0 +1,14 @@
+source https://www.nuget.org/api/v2
+source https://api.nuget.org/v3/index.json
+
+framework: net5.0, netstandard2.0
+
+nuget FSharp.Core
+nuget Fable.Core
+nuget Fable.React
+nuget Fable.Elmish
+nuget Fable.Elmish.HMR
+nuget Fable.Elmish.React
+nuget Feliz
+nuget Feliz.Bulma
+nuget Zanaptak.TypedCssClasses
