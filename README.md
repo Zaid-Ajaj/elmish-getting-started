@@ -47,3 +47,5 @@ yarn run purge
 ](https://github.com/Elliotclyde)
 - [elmish-fss-template](https://github.com/Bjorn-Strom/elmish-fss-template) by [Bjørn-Ivar Strøm
 ](https://github.com/Bjorn-Strom)
+- [elmish-getting-started](https://github.com/Zaid-Ajaj/elmish-getting-started) by [Zaid Ajaj
+](https://github.com/Zaid-Ajaj)
