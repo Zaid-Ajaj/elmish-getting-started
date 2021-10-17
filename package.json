@@ -1,20 +1,29 @@
 {
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server",
-    "build": "webpack --mode production"
-  },
-  "dependencies": {
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "postinstall": "dotnet tool restore && dotnet paket install && dotnet femto ./src",
+    "build": "NODE_ENV=production dotnet fable ./src --outDir ./.fable-build && webpack",
+    "serve": "NODE_ENV=development dotnet fable watch ./src --outDir ./.fable-build --run webpack-dev-server",
+    "clean": "rm -rf .fable-build/ publish/",
+    "purge": "yarn run clean && rm -rf node_modules/ packages/ paket-files/ .paket/ src/bin/ src/obj/ *.lock"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.2",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.4.0",
     "dotenv-webpack": "^7.0.3",
-    "fable-compiler": "^2.4.16",
-    "fable-loader": "^2.1.8",
-    "webpack": "^4.38.0",
-    "webpack-cli": "^3.3.6",
-    "webpack-dev-server": "^3.11.2"
+    "esbuild-loader": "^2.16.0",
+    "graceful-fs": "^4.2.8",
+    "html-webpack-plugin": "^5.4.0",
+    "mini-css-extract-plugin": "^2.4.2",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.0",
+    "webpack-dev-server": "^4.3.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bulma": "^0.9.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }

@@ -1,4 +1,4 @@
-module App
+﻿module App
 
 #if DEBUG
 open Elmish.HMR
@@ -10,13 +10,12 @@ open Feliz
 
 type State = { Count : int }
 
-let init () = { Count = 0 }
+let init () = { Count = 13 }
 
 let update (msg : Msg) (state : State) : State =
   match msg with
-  | Increment -> { state with Count = state.Count + 1 }
-
-  | Decrement -> { state with Count = state.Count - 1 }
+  | Decrement -> { state with Count = state.Count + 1 }
+  | Increment -> { state with Count = state.Count - 1 }
 
 let render (state : State) (dispatch : Msg -> unit) =
   Html.div
