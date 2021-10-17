@@ -1,16 +1,12 @@
 ﻿module App
 
-#if DEBUG
-open Elmish.HMR
-#endif
-
 open Elmish
 open Elmish.React
 open Feliz
 
 type State = { Count : int }
 
-let init () = { Count = 13 }
+let init () = { Count = 22 }
 
 let update (msg : Msg) (state : State) : State =
   match msg with

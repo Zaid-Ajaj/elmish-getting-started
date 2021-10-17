@@ -1,7 +1,7 @@
 
 # Fable compilation
-
-publish/
+.fable-build/
+public/scripts/
 
 *.lock
 
@@ -11,7 +11,7 @@ packages/
 paket-files/
 node_modules/
 .paket/
-.fable-build/
+
 [Bb]in/
 [Oo]bj/
 [Ll]og/
