@@ -5,6 +5,22 @@ VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "App", "src\App.fsproj", "{93AE29C6-085A-444F-A143-89FA83EDCA8E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFiles", "SolutionFiles", "{11873EA4-5C4B-4CEC-B1C8-37073C4786F8}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		Nuget.Config = Nuget.Config
+		package.json = package.json
+		package-lock.json = package-lock.json
+		README.md = README.md
+		webpack.config.js = webpack.config.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dist", "dist", "{9399416A-20C5-4F41-B0A7-2D8F73B93334}"
+	ProjectSection(SolutionItems) = preProject
+		dist\fable.ico = dist\fable.ico
+		dist\index.html = dist\index.html
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
