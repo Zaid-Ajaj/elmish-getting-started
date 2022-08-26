@@ -7,6 +7,6 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Fable.Elmish.React" Version="3.0.1" />
-    <PackageReference Include="Feliz" Version="0.68.10" />
+    <PackageReference Include="Feliz" Version="1.56.0" />
   </ItemGroup>
 </Project>

@@ -1,10 +1,21 @@
 const path = require("path")
 
 module.exports = {
-    mode: "none",
+    mode: "development",
     entry: "./src/App.fsproj",
+    devtool: "eval-source-map",
+
     devServer: {
-        contentBase: path.join(__dirname, "./dist")
+        devMiddleware: {
+            publicPath: "/"
+        },
+        port: 8080,
+        proxy: undefined,
+        hot: true,
+        static: {
+            directory: path.resolve(__dirname, "./dist"),
+            staticOptions: {},
+        },
     },
     module: {
         rules: [{

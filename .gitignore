@@ -68,6 +68,9 @@ ipch/
 # Other Visual Studio data
 .vs/
 
+# rider
+.idea
+
 # Guidance Automation Toolkit
 *.gpState
 
